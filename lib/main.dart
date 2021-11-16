@@ -3,6 +3,8 @@ import 'package:vipani/features/presentation/pages/flow.dart';
 import 'package:vipani/features/presentation/pages/flow.dart';
 import 'package:vipani/on_generate_route.dart';
 
+import 'features/presentation/pages/profile.dart';
+
 void main() => runApp(MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark(),
@@ -11,7 +13,7 @@ void main() => runApp(MaterialApp(
       initialRoute: "/",
       routes: {
         "/": (context) {
-          return const FlowPage();
+          return const ProfileScreen();
         },
       },
     ));
