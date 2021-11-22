@@ -3,6 +3,7 @@ import 'package:vipani/features/presentation/pages/flow.dart';
 import 'package:vipani/features/presentation/pages/flow.dart';
 import 'package:vipani/on_generate_route.dart';
 
+import 'features/presentation/pages/add_price_screen.dart';
 import 'features/presentation/pages/profile.dart';
 
 void main() => runApp(MaterialApp(
@@ -13,7 +14,7 @@ void main() => runApp(MaterialApp(
       initialRoute: "/",
       routes: {
         "/": (context) {
-          return const FlowPage();
+          return const ProfileScreen();
         },
       },
     ));

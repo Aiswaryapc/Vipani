@@ -9,14 +9,18 @@ class ProfileScreen extends StatefulWidget {
 }
 
 class _ProfileScreenState extends State<ProfileScreen> {
-  final List<Map> myProducts =[{"id": 1, "name": "Women Red Solid Maxi", "name1": "999/- 3,999/-",},]
-    // {"id": 2, "name": "Women Red Solid Maxi", "name1": "999/- 3,999/-","img": "assets/grid1.png"},
-    // {"id": 3, "name": "Women Red Solid Maxi", "name1": "999/- 3,999/-","img": "assets/grid2.png"},
-    // {"id": 4, "name": "Women Red Solid Maxi", "name1": "999/- 3,999/-","img": "assets/grid3.png"},
-    // {"id": 5, "name": "Women Red Solid Maxi", "name1": "999/- 3,999/-","img": "assets/Group 203.png"},
-    // {"id": 6, "name": "Women Red Solid Maxi", "name1": "999/- 3,999/-","img": "assets/grid1.png"},
-    // {"id": 7, "name": "Women Red Solid Maxi", "name1": "999/- 3,999/-","img": "assets/grid2.png"},
-    // {"id": 8, "name": "Women Red Solid Maxi", "name1": "999/- 3,999/-","img": "assets/grid3.png"},
+  final List<Map> myProducts =[{"index": 1, "name": "Women Red Solid Maxi", "name1": "999/- 3,999/-","img": "assets/Group 203.png"},
+    {"index": 2, "name": "Women Red Solid Maxi", "name1": "999/- 3,999/-","img": "assets/grid1.png"},
+    {"index": 3, "name": "Women Red Solid Maxi", "name1": "999/- 3,999/-","img": "assets/grid2.png"},
+    {"index": 4, "name": "Women Red Solid Maxi", "name1": "999/- 3,999/-","img": "assets/grid3.png"},
+    {"index": 5, "name": "Women Red Solid Maxi", "name1": "999/- 3,999/-","img": "assets/Group 203.png"},
+    {"index": 6, "name": "Women Red Solid Maxi", "name1": "999/- 3,999/-","img": "assets/grid1.png"},
+    {"index": 7, "name": "Women Red Solid Maxi", "name1": "999/- 3,999/-","img": "assets/grid2.png"},
+    {"index": 8, "name": "Women Red Solid Maxi", "name1": "999/- 3,999/-","img": "assets/grid3.png"},
+    {"index": 9, "name": "Women Red Solid Maxi", "name1": "999/- 3,999/-","img": "assets/Group 203.png"},
+    {"index": 10, "name": "Women Red Solid Maxi", "name1": "999/- 3,999/-","img": "assets/grid1.png"},
+    {"index": 11, "name": "Women Red Solid Maxi", "name1": "999/- 3,999/-","img": "assets/grid2.png"},
+    {"index": 12, "name": "Women Red Solid Maxi", "name1": "999/- 3,999/-","img": "assets/grid3.png"},]
 
 
       .toList();
@@ -87,9 +91,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
                               ),
                             ),
                             decoration: BoxDecoration(
-                          image: const DecorationImage(
+                          image:  DecorationImage(
                           image: AssetImage(
-                               "assets/Group 203.png"),fit: BoxFit.fill,),
+                              myProducts[index]["img"]),fit: BoxFit.fill,),
                                 borderRadius: BorderRadius.circular(15)),
                           );
                         }),
