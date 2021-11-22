@@ -14,7 +14,7 @@ void main() => runApp(MaterialApp(
       initialRoute: "/",
       routes: {
         "/": (context) {
-          return const ProfileScreen();
+          return const FlowPage();
         },
       },
     ));
